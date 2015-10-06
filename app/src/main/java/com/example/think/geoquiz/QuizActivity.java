@@ -140,7 +140,7 @@ public class QuizActivity extends AppCompatActivity {
             public void onClick(View v) {
                 //　Start CheatActivity
                 boolean answerIsTrue = mQuestionBank[mCurrentIndex].isAnswerTrue();
-                Intent i = new Intent(QuizActivity.this, CheatActivity.class);
+                Intent i = CheatActivity.newIntent(QuizActivity.this, answerIsTrue);
                 startActivityForResult(i, REQUEST_CODE_CHEAT);
             }
         });
