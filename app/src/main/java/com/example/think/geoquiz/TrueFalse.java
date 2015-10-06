@@ -8,11 +8,11 @@ public class TrueFalse {
     //mQustion holds resource ID of a string resource for the question.
     private int mQuestion;
 
-    private boolean mTrueQuestion;
+    private boolean mAnswerTrue;
 
-    public TrueFalse(int question, boolean trueQuestion) {
+    public TrueFalse(int question, boolean answerTrue) {
         mQuestion = question;
-        mTrueQuestion = trueQuestion;
+        mAnswerTrue = answerTrue;
     }
 
     public int getQuestion() {
@@ -23,12 +23,12 @@ public class TrueFalse {
         mQuestion = question;
     }
 
-    public boolean isTrueQuestion() {
-        return mTrueQuestion;
+    public boolean isAnswerTrue() {
+        return mAnswerTrue;
     }
 
-    public void setTrueQuestion(boolean trueQuestion) {
-        mTrueQuestion = trueQuestion;
+    public void setAnswerTrue(boolean answerTrue) {
+        mAnswerTrue = answerTrue;
     }
 
 
